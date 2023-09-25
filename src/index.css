@@ -149,14 +149,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  font-family: 'Playfair Display', serif;
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
   background-color: var(--bg);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  position: relative;
 }
 
 main {

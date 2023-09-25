@@ -1,8 +1,58 @@
 .container {
   padding: 10px;
   height: 100vh;
+  position: relative;
 }
 
 .videoContainer {
   width: 100%;
+}
+
+.video {
+  position: relative;
+}
+
+.controlls {
+  position: absolute;
+  z-index: 5;
+  top: 50px;
+  right: 30px;
+  display: grid;
+  gap: 1rem;
+}
+
+.palyContainer,
+.muteContainer {
+  width: 35px;
+  height: 35px;
+  background-color: var(--textColor);
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.icon {
+  color: black;
+  font-size: 1.3rem;
+}
+
+.gotoBtnContainer{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  position: sticky;
+  bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .palyContainer:hover,
+  .muteContainer:hover {
+    transform: scale(0.9);
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.4s;
+  }
 }
