@@ -1,6 +1,5 @@
 .container {
   padding: 10px;
-  height: 100vh;
   position: relative;
 }
 
@@ -40,13 +39,20 @@
   font-size: 1.3rem;
 }
 
-.gotoBtnContainer{
+.gotoBtnContainer {
   margin-top: 5rem;
   display: flex;
   justify-content: center;
   margin: 0 auto;
   position: sticky;
   bottom: 0;
+  transform: translateY(-27px);
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    height: 130vh;
+  }
 }
 
 @media screen and (min-width: 1024px) {

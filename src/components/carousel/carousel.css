@@ -1,0 +1,78 @@
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.4s ease;
+  transform: translateX(calc(-80% - -17px));
+}
+
+.carousel-container.sliding {
+  transition: none;
+}
+
+.carousel-container.sliding.next {
+  transform: translateX(0%);
+}
+
+.carousel-container.sliding.prev {
+  transform: translateX(calc(2 * (-80% - 20px)));
+}
+
+.carousel-slot {
+  flex: 1 0 100%;
+  flex-basis: 80%;
+  margin-right: 20px;
+}
+
+.carousel-slot img {
+  width: 100%;
+}
+.container {
+  position: relative;
+  display: grid;
+  gap: 2rem;
+}
+.button_container {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+
+.icon_btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.icon {
+  font-size: 1.3rem;
+}
+
+.desc {
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: var(--textColor);
+}
+
+.line_nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line_nav > span {
+  width: 90px;
+  height: 2px;
+  background-color: #d9d9d9;
+  transition:cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+}
