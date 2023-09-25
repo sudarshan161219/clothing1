@@ -1,0 +1,50 @@
+.header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: var(--bg);
+  padding: 12px;
+}
+
+.container {
+  padding: 10px;
+  will-change: min-height;
+  /* min-height: 150px; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: end;
+  position: relative;
+}
+
+.logo {
+  width: 100%;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  color: var(--textColor);
+  font-size: 1.3rem;
+}
+
+.logoContainer {
+  transition: width 0.8s cubic-bezier(0.5, 0, 0, 1) 0s, transform 0.8s cubic-bezier(0.5, 0, 0, 1) 0s;
+  will-change: width, transform;
+  width: 100%;
+  transform: translate3d(0px, 24px, 0px);
+  height: auto;
+}
+
+
+.logoContainer2{
+  transition: width 0.8s cubic-bezier(0.5, 0, 0, 1) 0s, transform 0.8s cubic-bezier(0.5, 0, 0, 1) 0s;
+  width: 113px;
+  height: 0px;
+  will-change: width, transform;
+  transform: translate3d(0px, -32px, 0px);
+}
+
