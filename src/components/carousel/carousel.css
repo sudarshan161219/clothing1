@@ -38,10 +38,9 @@
 }
 .button_container {
   position: absolute;
-  top: 50%;
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   display: none;
 }
@@ -74,5 +73,39 @@
   width: 90px;
   height: 2px;
   background-color: #d9d9d9;
-  transition:cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel-slot img {
+    width: 29em;
+  }
+  .carousel-slot {
+    flex: 1 1 100%;
+    flex-basis: 80%;
+    margin-right: 20px;
+  }
+  .carousel-container {
+    gap: 10rem;
+    display: flex;
+    transition: transform 0.4s ease;
+    transform: translateX(calc(-70% - -430px));
+  }
+  .icon_btn {
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .button_container {
+    display: flex;
+    cursor: pointer;
+    top: 220px;
+    justify-content: space-between;
+    /* padding:  0 05rem; */
+  }
 }

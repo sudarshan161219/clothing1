@@ -1,11 +1,14 @@
 import styles from "./main.module.css"
-import { Video, Slider } from "../components/export"
+import { Section1, Slider, Collection, Featured, Navigation } from "../components/export"
 
 const Main = () => {
   return (
     <div className={styles.container}>
-      < Video />
+      < Section1 />
       <Slider />
+      <Collection />
+      < Featured />
+      < Navigation />
     </div>
   )
 }

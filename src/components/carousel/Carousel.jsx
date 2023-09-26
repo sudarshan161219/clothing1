@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./carousel.css"
 import { useSwipeable } from 'react-swipeable';
 import { GrLinkNext, GrLinkPrevious } from "react-icons/gr"
@@ -17,6 +17,15 @@ const Carousel = ({ children }) => {
     const [sliding, setSliding] = useState(false);
     const [direction, setDirection] = useState('');
     const [pos, setPos] = useState(0);
+    const [screenSize, setScreenSize] = useState(getCurrentDimension());
+
+
+    function getCurrentDimension() {
+        return {
+            width: window.innerWidth,
+            height: window.innerHeight
+        }
+    }
 
     const slideNext = () => {
         setSliding(true);
@@ -44,17 +53,20 @@ const Carousel = ({ children }) => {
         }
     }
 
-    const handlers = useSwipeable({
-        // onSwipedLeft: () => slide(NEXT),
-        // onSwipedRight: () => slide(PREV),
-        // swipeDuration: 0,
-        // preventScrollOnSwipe: true,
-        // trackMouse: true,
-        // onSwiped: (eventData) => console.log("User Swiped!", eventData),
-        // onSwiping: () => console.log('swiping'),
-        // onSwipedUp: () => console.log('up'),
-        // touchEventOptions: { passive: true },
 
+    useEffect(() => {
+        const updateDimension = () => {
+            setScreenSize(getCurrentDimension())
+        }
+        window.addEventListener('resize', updateDimension);
+
+        return (() => {
+            window.removeEventListener('resize', updateDimension);
+        })
+
+    }, [screenSize])
+
+    const handlers = useSwipeable({
         onSwipedLeft: () => slide(NEXT),
         onSwipedRight: () => slide(PREV),
         swipeDuration: 500,

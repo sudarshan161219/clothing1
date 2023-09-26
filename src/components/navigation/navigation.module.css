@@ -1,0 +1,142 @@
+.container {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 10;
+  transform: translateY(700px);
+  opacity: 0;
+  transition: ease-in-out 0.4s;
+  overflow: scroll;
+}
+
+.container::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+.container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.logo {
+  width: 30%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  padding: 10px;
+}
+.icons {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.closeContainer {
+  width: 45px;
+  height: 45px;
+  background-color: black;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.menu {
+  margin-top: 3rem;
+  display: grid;
+  gap: 2rem;
+}
+.title {
+  color: #6b2d35;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  padding: 0 10px;
+}
+
+.ulList {
+  display: grid;
+  gap: 2rem;
+  padding: 0 10px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  font-family: sans-serif;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+  justify-content: center;
+  align-items: flex-start;
+  height: 200px;
+  padding: 10px;
+  border-top: #b4b0b09f 1px solid;
+}
+
+.link {
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  letter-spacing: 1.2px;
+  text-transform: capitalize;
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.link::before,
+.link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -0.1rem;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #000;
+  transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s;
+}
+.link::before {
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.link::after {
+  transform-origin: right;
+  transition-delay: 0.25s;
+}
+.link:hover::before {
+  transform: scaleX(1);
+  transition-delay: 0.25s;
+}
+.link:hover::after {
+  transform: scaleX(0);
+  transition-delay: 0s;
+}

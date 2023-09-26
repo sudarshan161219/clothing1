@@ -1,11 +1,11 @@
-import { TOGGLE_MOBILE_MENU, TOGGLE_THEME } from "./action"
+import { TOGGLE_MENU, TOGGLE_THEME } from "./action"
 
 const reducer = (state, action) => {
 
-    if (action.type === TOGGLE_MOBILE_MENU) {
+    if (action.type === TOGGLE_MENU) {
         return {
             ...state,
-            toggleMobileMenu: !state.toggleMobileMenu
+            toggleMenu: !state.toggleMenu
         }
     }
 

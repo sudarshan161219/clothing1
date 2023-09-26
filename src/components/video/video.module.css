@@ -1,5 +1,4 @@
-.container {
-  padding: 10px;
+.container{
   position: relative;
 }
 
@@ -14,8 +13,8 @@
 .controlls {
   position: absolute;
   z-index: 5;
-  top: 50px;
-  right: 30px;
+  top: 20px;
+  right: 15px;
   display: grid;
   gap: 1rem;
 }
@@ -39,21 +38,7 @@
   font-size: 1.3rem;
 }
 
-.gotoBtnContainer {
-  margin-top: 5rem;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  position: sticky;
-  bottom: 0;
-  transform: translateY(-27px);
-}
 
-@media screen and (min-width: 500px) {
-  .container {
-    height: 130vh;
-  }
-}
 
 @media screen and (min-width: 1024px) {
   .palyContainer:hover,
