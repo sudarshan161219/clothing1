@@ -4,8 +4,10 @@ import { AiOutlineMenu } from "react-icons/ai"
 import { LuSearch } from "react-icons/lu"
 import logo from "../../assets/guccilogo.svg"
 import { useAppContext } from "../../context/Context"
+import SearchInput from "../searchInput/SearchInput"
+
 const Navbar = () => {
-    const { toggleMenu, toggleMenuFn } = useAppContext()
+    const { toggleMenu, toggleMenuFn, toggleSearch, toggleSearchFn } = useAppContext()
     const [scrollPosition, setScrollPosition] = useState(0);
 
 
@@ -27,12 +29,11 @@ const Navbar = () => {
     }, [toggleMenu]);
 
     return (
-        <header className={styles.header}>
+        <header className={styles.header} style={toggleMenu ? { zIndex: "0" } : { zIndex: "10" }}>
             <nav className={styles.container}>
-            <span className={styles.link}>contact us</span>
-                {/* <img className={styles.logoD} src={logo} alt="logo" /> */}
+                <span className={styles.link}>contact us</span>
                 <div className={styles.iconContainer}>
-                    < LuSearch className={styles.icon} />
+                    < LuSearch onClick={toggleSearchFn} className={styles.icon} />
                     <AiOutlineMenu onClick={toggleMenuFn} className={styles.icon} />
                 </div>
             </nav>
@@ -42,6 +43,8 @@ const Navbar = () => {
             } >
                 <img className={styles.logoM} src={logo} alt="logo" />
             </div>
+
+            {toggleSearch && <div className={styles.searchInput}> <SearchInput /></div>}
         </header>
     )
 }

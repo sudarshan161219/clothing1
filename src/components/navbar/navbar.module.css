@@ -4,7 +4,7 @@
   top: 0;
   background-color: var(--bg);
   padding: 12px;
-  z-index: 10;
+  z-index: 9;
 }
 
 .container {
@@ -30,6 +30,8 @@
 .icon {
   color: var(--textColor);
   font-size: 1.3rem;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .logoContainer {
@@ -93,9 +95,13 @@
   transition-delay: 0s;
 }
 
-/* .logoD {
-  opacity: 0;
-} */
+.searchInput{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+}
+
 @media screen and (min-width: 1000px) {
   .link {
     display: block;
@@ -125,5 +131,11 @@
 
   .logoM {
     width: 100%;
+  }
+
+  .searchInput{
+    width: 650px;
+    right: 0px;
+    left: unset;
   }
 }

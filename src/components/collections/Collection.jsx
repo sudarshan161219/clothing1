@@ -1,5 +1,5 @@
 import styles from "./collection.module.css"
-import GotoBtn from "../../components/gotoBtn/GotoBtn"
+
 
 const Collection = () => {
 
@@ -20,7 +20,7 @@ const Collection = () => {
 
     return (
         <div className={styles.container}>
-            
+
             {data.map((item) => (
                 <div key={item.tag} className={styles.imgContainer} >
                     <div className={styles.tag}>

@@ -1,11 +1,14 @@
 .container {
-  padding: 30px 10px 10px 10px;
-  background-color: black;
+  margin: 10px;
 }
 
 .group {
   position: relative;
-  margin-bottom: 45px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  height: 50px;
+  overflow: hidden;
+  padding: 0.5rem;
 }
 
 .input {
@@ -16,7 +19,7 @@
   width: 100%;
   border: none;
   border-bottom: 1px solid #757575;
-  color: #ffffff;
+  color: #000000;
 }
 .input:focus {
   outline: none;
@@ -24,13 +27,13 @@
 
 /* LABEL ======================================= */
 .label {
-  color: #999;
+  color: #424040;
   font-size: 17px;
-  font-weight: bold;
+  font-weight: 500;
   position: absolute;
   pointer-events: none;
   left: 5px;
-  top: 10px;
+  top: 18px;
   transition: 0.3s ease all;
   -moz-transition: 0.3s ease all;
   -webkit-transition: 0.3s ease all;
@@ -40,9 +43,9 @@
 /* active state */
 .input:focus ~ .label,
 .input:valid ~ .label {
-  top: -5px;
+  top: 5px;
   font-size: 14px;
-  color: #ffffff;
+  color: #000000;
 }
 
 /* BOTTOM BARS ================================= */
@@ -54,11 +57,11 @@
 .bar:before,
 .bar:after {
   content: "";
-  height: 2px;
+  height: 1px;
   width: 0;
   bottom: 1px;
   position: absolute;
-  background: #ffffff;
+  background: #000000;
   transition: 0.3s ease all;
   -moz-transition: 0.3s ease all;
   -webkit-transition: 0.3s ease all;
@@ -85,41 +88,4 @@
   left: 0;
   pointer-events: none;
   opacity: 0.5;
-}
-
-.title {
-  color: #757575;
-  font-weight: bold;
-  font-family: sans-serif;
-  font-size: 17px;
-}
-.desc {
-  font-weight: 400;
-  font-family: sans-serif;
-  color: #ffffff;
-  font-size: 0.7rem;
-}
-.felx1 {
-  display: grid;
-  gap: 2rem;
-}
-
-.logo {
-  width: 100%;
-}
-
-@media screen and (min-width: 1024px) {
-  .container{
-    display: flex;
-    gap: 2rem;
-    justify-content: space-between;
-  }
-  .flex{
-    order: 1;
-    width: 600px;
-  }
-
-  .logoContainer{
-    width: 120px;
-  }
 }

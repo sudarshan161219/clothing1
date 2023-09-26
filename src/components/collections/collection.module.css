@@ -1,9 +1,9 @@
 .container {
   padding: 10px;
   margin: 5rem 0;
-  /* display: grid;
+  display: grid;
   gap: 1.1rem;
-  position: relative; */
+  position: relative;
 
 }
 
@@ -39,12 +39,10 @@
 
 
 .actionBtn {
-  position: sticky;
-  bottom: 35px;
   display: grid;
-  justify-content: center;
-  gap: 1.1rem;
-  transform: translateY(-125px);
+  gap: 1rem;
+  position: absolute;
+  bottom: 30px;
 }
 
 .title {
@@ -71,13 +69,4 @@
   .container{
     display: flex;
   }
-
-  /* .actionBtn{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    position: sticky;
-    bottom: 0;
-    transform: translateY(-27px);
-  } */
 }

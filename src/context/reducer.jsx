@@ -1,4 +1,4 @@
-import { TOGGLE_MENU, TOGGLE_THEME } from "./action"
+import { TOGGLE_MENU, TOGGLE_SEARCH } from "./action"
 
 const reducer = (state, action) => {
 
@@ -9,12 +9,10 @@ const reducer = (state, action) => {
         }
     }
 
-    if (action.type === TOGGLE_THEME) {
-        const { toggleTheme } = state
+    if (action.type === TOGGLE_SEARCH) {
         return {
             ...state,
-            toggleTheme: !state.toggleTheme,
-            theme: !toggleTheme ? "dark" : "light"
+            toggleSearch: !state.toggleSearch,
         }
     }
 

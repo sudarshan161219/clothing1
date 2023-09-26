@@ -22,31 +22,34 @@ const Navigation = () => {
     ]
 
     return (
-        <div className={`${toggleMenu ? `${styles.show} ${styles.container}` : `${styles.container}`}`}>
-            <nav className={styles.nav}>
-                <img className={styles.logo} src={logo} alt="logo" />
-                <div onClick={toggleMenuFn} className={styles.closeContainer} >
-                    <AiOutlineClose className={styles.icons} />
+        <>
+            <div className={`${toggleMenu ? `${styles.show} ${styles.container}` : `${styles.container}`}`}>
+                <nav className={styles.nav}>
+                    <img className={styles.logo} src={logo} alt="logo" />
+                    <div onClick={toggleMenuFn} className={styles.closeContainer} >
+                        <AiOutlineClose className={styles.icons} />
+                    </div>
+                </nav>
+
+
+                <div className={styles.menu} >
+                    <h1 className={styles.title}>gucci ancora</h1>
+
+                    <ul className={styles.ulList}>
+                        {lists.map((list) => (
+                            <li key={list} className={styles.list}>{list} <GrFormNext /></li>
+                        ))}
+                    </ul>
                 </div>
-            </nav>
 
+                <div className={styles.links}>
+                    <span className={styles.link}>saved items</span>
+                    <span className={styles.link}>contact us</span>
+                </div>
 
-            <div className={styles.menu} >
-                <h1 className={styles.title}>gucci ancora</h1>
-
-                <ul className={styles.ulList}>
-                    {lists.map((list) => (
-                        <li key={list} className={styles.list}>{list} <GrFormNext /></li>
-                    ))}
-                </ul>
             </div>
-
-            <div className={styles.links}>
-                <span className={styles.link}>saved items</span>
-                <span className={styles.link}>contact us</span>
-            </div>
-
-        </div>
+       <div className={ `${toggleMenu ? `${styles.backDrop}` : `${styles.hide}`}`} ></div>
+        </>
     )
 }
 

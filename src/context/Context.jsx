@@ -1,10 +1,11 @@
 import { useContext, useReducer, createContext } from "react";
 import reducer from "./reducer"
-import { TOGGLE_MENU } from "./action"
+import { TOGGLE_MENU, TOGGLE_SEARCH } from "./action"
 
 
 const initialState = {
     toggleMenu: false,
+    toggleSearch: false
 }
 
 const Context = createContext({})
@@ -19,8 +20,12 @@ const ContextProvider = ({ children }) => {
         dispatch({ type: TOGGLE_MENU })
     }
 
+    const toggleSearchFn = () => {
+        dispatch({ type: TOGGLE_SEARCH })
+    }
+
     return (
-        <Context.Provider value={{ ...state, toggleMenuFn }} >
+        <Context.Provider value={{ ...state, toggleMenuFn, toggleSearchFn }} >
             {children}
         </Context.Provider>
     )
