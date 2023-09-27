@@ -98,7 +98,7 @@ const Carousel = ({ children }) => {
 
 
             <p className="desc">
-                GUCCI HORSEBIT CHAIN MEDIUM SHOULDER BAG
+                VELOCITY HORSEBIT CHAIN MEDIUM SHOULDER BAG
             </p>
 
             <div className='line_nav'>

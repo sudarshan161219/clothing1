@@ -1,5 +1,5 @@
 import styles from "./footer.module.css"
-import logo from "../../assets/guccilogo.svg"
+import logo from "../../assets/logoVF.svg"
 const Footer = () => {
     return (
         <div className={styles.container}>
@@ -15,7 +15,7 @@ const Footer = () => {
                 </div>
 
                 <div className={styles.felx1} >
-                    <h1 className={styles.title}>SIGN UP FOR GUCCI UPDATES</h1>
+                    <h1 className={styles.title}>SIGN UP FOR VELOCITY UPDATES</h1>
                     <p className={styles.desc}>By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and initiatives. More details on this are provided in our Privacy Policy</p>
                     <div className={styles.group}>
                         <input className={styles.input} type="email" required />

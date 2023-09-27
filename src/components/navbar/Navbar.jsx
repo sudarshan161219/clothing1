@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import styles from "./navbar.module.css"
 import { AiOutlineMenu } from "react-icons/ai"
 import { LuSearch } from "react-icons/lu"
-import logo from "../../assets/guccilogo.svg"
+import logo from "../../assets/logoV.svg"
 import { useAppContext } from "../../context/Context"
 import SearchInput from "../searchInput/SearchInput"
 

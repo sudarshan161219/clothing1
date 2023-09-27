@@ -102,6 +102,15 @@
   top: 50px;
 }
 
+.logo {
+  text-align: justify;
+  }
+  .logo:after {
+  content:"";
+  display: inline-block;
+  width: 100%;
+  }
+
 @media screen and (min-width: 1000px) {
   .link {
     display: block;
@@ -132,6 +141,9 @@
   .logoM {
     width: 100%;
   }
+
+
+
 
   .searchInput{
     width: 650px;

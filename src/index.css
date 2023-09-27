@@ -130,8 +130,8 @@ a {
 }
 
 :root {
-  --bg: #4b000a;
-  --textColor: white;
+  --bg: #ffffff;
+  --textColor: rgb(0, 0, 0);
   --footerBg: #000000;
 }
 

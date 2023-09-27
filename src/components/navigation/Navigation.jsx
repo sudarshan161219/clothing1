@@ -33,7 +33,7 @@ const Navigation = () => {
 
 
                 <div className={styles.menu} >
-                    <h1 className={styles.title}>gucci ancora</h1>
+                    <h1 className={styles.title}>Velocity ancora</h1>
 
                     <ul className={styles.ulList}>
                         {lists.map((list) => (
