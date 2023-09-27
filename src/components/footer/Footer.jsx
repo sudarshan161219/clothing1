@@ -6,7 +6,7 @@ const Footer = () => {
 
             <div className={styles.flex}>
                 <div className={styles.felx1} >
-                    <h1 className={styles.title}>Store Location</h1>
+                    <span className={styles.title}>Store Location</span>
                     <div className={styles.group}>
                         <input className={styles.input} type="text" required />
                         <span className={styles.bar}></span>
@@ -15,7 +15,7 @@ const Footer = () => {
                 </div>
 
                 <div className={styles.felx1} >
-                    <h1 className={styles.title}>SIGN UP FOR VELOCITY UPDATES</h1>
+                    <span className={styles.title}>SIGN UP FOR VELOCITY UPDATES</span>
                     <p className={styles.desc}>By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and initiatives. More details on this are provided in our Privacy Policy</p>
                     <div className={styles.group}>
                         <input className={styles.input} type="email" required />

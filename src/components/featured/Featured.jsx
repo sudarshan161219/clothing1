@@ -13,7 +13,7 @@ const Featured = () => {
                 <VideoBox video={src} poster={srcP} ariaLabel={label} />
 
                 <div className={styles.textContainer} >
-                    <h1 className={styles.title}>FALL WINTER 2023</h1>
+                    <strong className={styles.title}>FALL WINTER 2023</strong>
                     <p className={styles.desc}>The new campaign with Vittoria Ceretti, Aboubakar Konte, and Brando Erba.</p>
 
                     <span className={styles.link}>DISCOVER MORE</span>

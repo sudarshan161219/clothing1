@@ -25,8 +25,8 @@
 /* LABEL ======================================= */
 .label {
   color: #999;
-  font-size: 17px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 500;
   position: absolute;
   pointer-events: none;
   left: 5px;
@@ -34,7 +34,6 @@
   transition: 0.3s ease all;
   -moz-transition: 0.3s ease all;
   -webkit-transition: 0.3s ease all;
-  font-family: sans-serif;
 }
 
 /* active state */
@@ -89,15 +88,14 @@
 
 .title {
   color: #757575;
-  font-weight: bold;
-  font-family: sans-serif;
-  font-size: 17px;
+  font-weight: 500;
+  font-size: 16px;
 }
 .desc {
   font-weight: 400;
-  font-family: sans-serif;
   color: #ffffff;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  line-height: 150%;
 }
 .felx1 {
   display: grid;

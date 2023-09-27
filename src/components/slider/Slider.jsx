@@ -4,10 +4,12 @@ import Carousel from "../carousel/Carousel";
 
 const Slider = () => {
     let images = [
-        "https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1685057444/764255_AACU1_1000_001_074_0000_Light.jpg",
-        "https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1683738049/764339_FACM2_8747_001_060_0000_Light.jpg",
-        "https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1683306028/764339_AACU1_1275_001_060_0000_Light.jpg",
-        "https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1683588638/764255_AACU1_6404_001_074_0000_Light.jpg"
+        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1440&q=80",
+        "https://images.unsplash.com/photo-1506634572416-48cdfe530110?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1370&q=80",
+        "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
+        "https://images.unsplash.com/photo-1494652588305-d663c5a1eb31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1376&q=80",
+        "https://images.unsplash.com/photo-1578632292335-df3abbb0d586?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
+        "https://images.unsplash.com/photo-1536243298747-ea8874136d64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
     ]
 
     // const images = [

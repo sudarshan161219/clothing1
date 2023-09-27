@@ -114,6 +114,12 @@ const Carousel = ({ children }) => {
                 <span
                     onClick={() => setPos(3)}
                     style={pos === 3 ? { backgroundColor: "#000" } : { backgroundColor: "#d9d9d9" }}></span>
+                <span
+                    onClick={() => setPos(4)}
+                    style={pos === 4 ? { backgroundColor: "#000" } : { backgroundColor: "#d9d9d9" }}></span>
+                <span
+                    onClick={() => setPos(5)}
+                    style={pos === 5 ? { backgroundColor: "#000" } : { backgroundColor: "#d9d9d9" }}></span>
             </div>
         </div>
     )

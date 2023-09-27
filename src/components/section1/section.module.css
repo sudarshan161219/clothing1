@@ -1,6 +1,8 @@
 .container {
   padding: 10px;
   position: relative;
+  height: 100%;
+  margin-top: 3rem;
 }
 
 .gotoBtnContainer {
@@ -11,19 +13,6 @@
   position: sticky;
   bottom: 0;
   transform: translateY(-27px);
-}
-
-@media screen and (min-width: 500px) {
-  .container {
-    height: 130vh;
-  }
-}
-
-
-@media screen and (min-width: 600px) {
-  .container {
-    height: 100%;
-  }
 }
 
 

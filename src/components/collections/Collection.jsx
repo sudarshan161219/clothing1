@@ -6,13 +6,13 @@ const Collection = () => {
     const data = [
         {
             tag: "women",
-            img: "https://media.gucci.com/dynamic/b3c8/qVLZh76V9UYr8fYV089o0HCXb7HPRpSC57Mi00TLaAXq00mmV22ving4ho6wjWC39nQx9rDB5brzysBQp1P8z+qu6ahwhxgkjSQHpVDOl0yz6jmKSOpx5JeMigdLHDeGnAfolHLYRQGcC3fAjfqLlJD+3jWhGWTcCvQI8vtup5QPsoEiy7oNT0K9s3vPpU+pVIC7TdzA7dhDU1eb7SOraUFkTlQaGIg1hIblFI8dER9rqJk7VH8rIeL2+ln_SXGIPyRB8mHdjTVW+wEJUYJw4A==/Portrait-HP-FallWinter-Grey-Chain-Sep23.png",
+            img: "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1372&q=80",
             title: "Handbags",
             btnText: "Explore the collection"
         },
         {
             tag: "men",
-            img: "https://media.gucci.com/dynamic/b3c8/5AUMPlQOgkXV3qvdWyYSpllKRzd2vMQIZudObmLP6glAEfcSe2tVzViqW3LkXKsQ36Up_qdmF2QvX8bwPc5P41qEUTZY92qSsMAivrXNWwbrNrzggT+98UcpZWz6HIPzvwGTa_7xetrcd6q_iVNj0PKiVX8au_EKk3O9jCVZ2pktlzQV5ioGYMBIkX5OnTbMbVABOZiodf8Zz3tcIwcF_SYzsXzM1qdbVGw0hKXqPIIaz8xcRg7DxfVFooPs7UcbocYSLMIXOXdLt79Jff736YMwTnXXl6LrynqxdQD_v3P3f7s_gPsbRmUzv3kKgEZzV_sZSChPQKBeLUKm6dvX2g==/Portrait-Gucci-FallWinter23-Collection-July23-AsianTalent-005-modified.png",
+            img: "https://images.unsplash.com/photo-1520975661595-6453be3f7070?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
             title: "Clothing",
             btnText: "Explore the collection"
         }
@@ -28,7 +28,7 @@ const Collection = () => {
                     </div>
                     <img className={styles.img} src={item.img} alt="img" />
                         <div className={styles.actionBtn}>
-                            <h1 className={styles.title}>{item.title}</h1>
+                            <strong className={styles.title}>{item.title}</strong>
                             <button className={styles.btn}>{item.btnText}</button>
                         </div>
                     </div>

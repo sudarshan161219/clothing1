@@ -23,7 +23,7 @@
 .muteContainer {
   width: 35px;
   height: 35px;
-  background-color: var(--textColor);
+  background-color: #fff;
   border-radius: 100%;
   display: flex;
   flex-direction: column;

@@ -27,7 +27,7 @@ const Navbar = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [toggleMenu]);
-
+// console.log(scrollPosition);
     return (
         <header className={styles.header} style={toggleMenu ? { zIndex: "0" } : { zIndex: "10" }}>
             <nav className={styles.container}>
@@ -39,7 +39,7 @@ const Navbar = () => {
             </nav>
 
             <div className={
-                `${scrollPosition > 20 ? `${styles.logoContainer2}` : `${styles.logoContainer}`}`
+                `${scrollPosition >= 1 ? `${styles.logoContainer2}` : `${styles.logoContainer}`}`
             } >
                 <img className={styles.logoM} src={logo} alt="logo" />
             </div>

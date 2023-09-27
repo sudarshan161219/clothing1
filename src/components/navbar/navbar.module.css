@@ -39,7 +39,7 @@
     transform 0.8s cubic-bezier(0.5, 0, 0, 1) 0s;
   will-change: width, transform;
   width: 100%;
-  transform: translate3d(0px, 24px, 0px);
+  transform: translate3d(0px, 45px, 0px);
   height: auto;
 }
 
@@ -55,9 +55,8 @@
 .link {
   display: none;
   font-size: 0.9rem;
-  font-family: sans-serif;
   font-weight: 500;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   letter-spacing: 1.2px;
   text-transform: capitalize;
