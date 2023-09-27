@@ -9,7 +9,7 @@ import SearchInput from "../searchInput/SearchInput"
 const Navbar = () => {
     const { toggleMenu, toggleMenuFn, toggleSearch, toggleSearchFn } = useAppContext()
     const [scrollPosition, setScrollPosition] = useState(0);
-
+    const [sheight, setSheight] = useState(50)
 
     const handleScroll = () => {
         const position = window.scrollY
@@ -27,9 +27,11 @@ const Navbar = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [toggleMenu]);
-// console.log(scrollPosition);
+
     return (
-        <header className={styles.header} style={toggleMenu ? { zIndex: "0" } : { zIndex: "10" }}>
+        <header
+            className={`${scrollPosition >= 10 ? `${styles.minHeader}` : `${styles.header}`}`}
+        >
             <nav className={styles.container}>
                 <span className={styles.link}>contact us</span>
                 <div className={styles.iconContainer}>

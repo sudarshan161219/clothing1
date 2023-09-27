@@ -104,7 +104,7 @@
   .button_container {
     display: flex;
     cursor: pointer;
-    top: 220px;
+    top: 300px;
     justify-content: space-between;
     /* padding:  0 05rem; */
   }

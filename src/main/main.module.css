@@ -1,5 +1,4 @@
 .container {
-  /* margin-top: 2rem; */
+  scroll-behavior: smooth;
+  transition: ease-in 0.8s;
 }
-
-
